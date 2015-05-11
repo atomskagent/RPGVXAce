@@ -1,0 +1,16 @@
+Guidelines on Game Development using RPG Maker: A colaborative approach
+
+Introdução
+  
+
+1 - Mapas
+   - O RPG Maker utiliza um sistema de mapeamento com mapas, mapas diferentes com ids iguais vão dar conflito.
+     O id de um mapa é gerado pelo sistema, de forma consecutiva, e não definido pelo usuário.
+     Exemplo: 
+           usuário criou novo mapa, nome: mapa2, atríbuido id:map_02
+           usuário apagou mapa - id:map_02
+           usuário criou novo mapa, mapa2, atríbuido id:map_03
+     Dessa forma, se dois usuários criam mapas novosque recebem o mesmo id em um projeto matriz,
+     o projeto que vai ser commitado vai ser apenas o último a ser dado o push no repositório.
+   
+   - Sendo assim, o usuário pode fazer alterações dentro do mapa em contexto local, mas não pode alterar o mapa em contexto global.
